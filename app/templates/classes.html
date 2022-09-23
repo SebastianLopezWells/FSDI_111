@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block title %} About {% endblock title %}
+
+{% block content %}
+
+<h1>Classes</h1>
+<p><i>A class is a code template for creating objects.</i></p>
+<p>An object is simply a collection of data (variables) and methods (functions) that act on those data. Similarly, a class is a blueprint for that object. We can think of a class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows, etc.</p>
+
+<p>class MyNewClass:</p>
+<p>'''This is a docstring. I have created a new class'''</p>
+<p>pass</p>
+
+
+<p>A class creates a new local namespace where all its attributes are defined. Attributes may be data or functions.</p>
+
+<div style="border: solid;">
+    <p>class Person:</p>
+    <p>"This is a person class"</p>
+    <p>age = 10</p>
+
+    <p>def greet(self):</p>
+        <p>print('Hello')</p>
+
+
+    <p># Output: 10</p>
+
+    <p>print(Person.age)</p>
+
+    <p># Output: function Person.greet</p>
+
+    <p>print(Person.greet)</p>
+
+    <p># Output: "This is a person class"</p>
+
+    <p>print(Person.__doc___)</p>
+
+</div>
+
+{% endblock content %}

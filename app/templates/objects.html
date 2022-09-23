@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block title %} About {% endblock title %}
+
+{% block content %}
+
+<h1>Objects</h1>
+<p><i>Obejcts are to classes what houses are to blueprints</i></p>
+<p>Simply but, an object is an instance of a class...</p>
+
+<p>Python is an object-oriented programming language. An object is simply a collection of data (variables) and methods (functions) that act on those data.</p>
+
+<p>We can create new object instances of classes. The procedure to crate it is similar to a function call.</p>
+
+<p>harry = Person()</p>
+<p>This will create a new object instance named <b>harry</b>. We can access the atributes of objects using the object name prefix.</p>
+
+<p>It means to say, since Person.greet is a function objects (attribute of class), Person.greet will be a method object.</p>
+
+<div style="border: solid;">
+    <p>class Person:</p>
+    <p>"This is a person class"</p>
+    <p>age = 10</p>
+
+    <p>def greet(self):</p>
+        <p>print('Hello')</p>
+
+
+    <p># create a new object of Person class</p>
+
+    <p>harry = Person()</p>
+
+    <p># Output: function Person.greet</p>
+
+    <p>print(Person.greet)</p>
+
+    <p># Output: bound method Person.greet of __main__.Person object</p>
+
+    <p>print(harry.greet)</p>
+
+    <p># Calling object's greet() method
+    # Output: Hello</p>
+    
+    <p>harry.greet()</p>
+</div>
+
+{% endblock content %}

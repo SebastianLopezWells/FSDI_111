@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+    <h1>Home page</h1>
+    <p>Welcome to our new home page! Enjoy your stay.</p>
+
+    <h5>Differences between an Object and a Class</h5>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Difference #</th>
+            <th scope="col">Object</th>
+            <th scope="col">Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Object is an instance of a class.</td>
+            <td>Class is a bluprint or template from which objects are created.</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>An object is a physical entity.</td>
+            <td>Class is a logical entity.</td> 
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Object is allocated memory when created.</td>
+            <td>Class does not allocate any memory when created.</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Object is a specific entity.</td>
+            <td>Class is a group of identical objects.</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>A class can have any number of instances or objects.</td>
+            <td>The class can be declared only once.</td>
+          </tr>
+        </tbody>
+      </table>
+{% endblock content %}
